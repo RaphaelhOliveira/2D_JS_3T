@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário Organizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        .header {
+            font-size: 28px;
+            text-align: center;
+            color: #5e2c91;
+            margin-bottom: 20px;
+        }
+        .form-style {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-style {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        .input-style:focus {
+            border-color: #5e2c91;
+            outline: none;
+        }
+        .button-style {
+            background-color: #6a3fbb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .button-style:hover {
+            background-color: #582a94;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="header">Meu Formulário</h1>
+        <form class="form-style">
+            <input type="text" class="input-style" placeholder="Seu Nome" required>
+            <input type="email" class="input-style" placeholder="Seu Email" required>
+            <button type="submit" class="button-style">Enviar</button>
+        </form>
+        <div class="button-container">
+            <button class="button-style">Botão 1</button>
+            <button class="button-style">Botão 2</button>
+            <button class="button-style">Botão 3</button>
+        </div>
+    </div>
 </body>
 </html>
